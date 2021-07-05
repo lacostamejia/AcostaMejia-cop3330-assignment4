@@ -1,5 +1,10 @@
 package ucf.assignment;
 
+/*
+ *  UCF COP3330 Summer 2021 Assignment 4 Solution
+ *  Copyright 2021 Luis Andres Acosta Mejia
+ */
+
 public class ListItems {
     private String name;
     private String due_date;

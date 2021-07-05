@@ -14,6 +14,11 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+/*
+ *  UCF COP3330 Summer 2021 Assignment 4 Solution
+ *  Copyright 2021 Luis Andres Acosta Mejia
+ */
+
 //Here is the main class where the application will start running
 
 public class Todolist extends Application {

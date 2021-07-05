@@ -1,5 +1,10 @@
 package ucf.assignment;
 
+/*
+ *  UCF COP3330 Summer 2021 Assignment 4 Solution
+ *  Copyright 2021 Luis Andres Acosta Mejia
+ */
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;

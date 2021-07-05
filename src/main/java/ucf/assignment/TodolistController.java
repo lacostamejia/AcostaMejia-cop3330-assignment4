@@ -18,6 +18,11 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+/*
+ *  UCF COP3330 Summer 2021 Assignment 4 Solution
+ *  Copyright 2021 Luis Andres Acosta Mejia
+ */
+
 //Here is the controller that contains all the functions of the FXML
 
 //Add pseudocode for each action event!
