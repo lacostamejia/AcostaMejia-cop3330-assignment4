@@ -1,0 +1,67 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+class Todolist{
++main()
++start()
+}
+class TodoListController{
+model: List
+'GUI functions'
+}
+
+class List{
+List_Name: String
+ListItems: ArrayList
++SaveList()
++Save_All_Lists()
++Load_Multiple_Lists()
++Load_List()
++Delete_Item()
++Search()
+
+
+}
+class ListItems{
+Name: String
+Due_Date: String
+Description_Item: String
++Delete_Item()
++getname()
++setname(String name)
++getDue_date()
++setDue_date(String due_date)
++getDescription_item()
++setDescription_item()
++modify_Description_Item()
+
+}
+
+
+class ModifyItemListController{
+
+
+
+}
+
+class NewTodoListController{
+
+
+
+}
+
+class NewTodoListItemController{
+
+}
+
+
+
+org.javafx.Application <|-- Todolist
+Todolist -- TodoListController
+TodoListController *-- List
+List *-- ListItems
+TodoListController --ModifyItemListController
+TodoListController -- NewTodoListItemController
+TodoListController --  NewTodoListController
+
+
+@enduml

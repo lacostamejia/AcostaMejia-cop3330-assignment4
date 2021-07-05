@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="569.0" prefWidth="742.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignment.TodolistController">
+   <children>
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="134.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#New_List" text="New To-Do List" />
+                  <MenuItem mnemonicParsing="false" onAction="#Load_List" text="Load To-Do List" />
+                  <MenuItem mnemonicParsing="false" onAction="#Save_All_Lists" text="Save All Lists" />
+                  <MenuItem mnemonicParsing="false" onAction="#Load_Multiple_Lists" text="Load Multiple Lists" />
+               </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <SplitPane dividerPositions="0.5" layoutX="47.0" layoutY="40.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="28.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <ListView fx:id="Lists" layoutY="25.0" onMouseClicked="#Show_List" prefHeight="234.0" prefWidth="358.0" />
+                  <ListView fx:id="Items_List" layoutX="366.0" layoutY="25.0" prefHeight="234.0" prefWidth="358.0" />
+                  <Label layoutX="510.0" text="Items">
+                     <font>
+                        <Font name="Times New Roman" size="26.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="150.0" text="Lists">
+                     <font>
+                        <Font name="Times New Roman" size="26.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="232.0" prefWidth="643.0">
+               <children>
+                  <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#New_Item" prefHeight="25.0" prefWidth="80.0" text="New Item" />
+                  <Button layoutX="14.0" layoutY="52.0" mnemonicParsing="false" onAction="#Delete_Item" prefHeight="25.0" prefWidth="80.0" text="Delete Item" />
+                  <Button layoutX="14.0" layoutY="91.0" mnemonicParsing="false" onAction="#Save_List" prefHeight="25.0" prefWidth="80.0" text="Save List" />
+                  <RadioButton layoutX="615.0" layoutY="83.0" mnemonicParsing="false" onAction="#Item_Is_Completed" text="Completed" />
+                  <Label layoutX="328.0" layoutY="12.0" text="Item_name">
+                     <font>
+                        <Font name="Times New Roman" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="231.0" layoutY="56.0" prefHeight="17.0" prefWidth="67.0" text="Description" />
+                  <Label layoutX="498.0" layoutY="56.0" text="Due_Date" />
+                  <Label layoutX="558.0" layoutY="18.0" text="Status:" />
+                  <TextField fx:id="Description_label" layoutX="179.0" layoutY="79.0" />
+                  <TextField fx:id="Due_date_label" layoutX="441.0" layoutY="79.0" />
+                  <CheckBox layoutX="209.0" layoutY="235.0" mnemonicParsing="false" onAction="#Show_Completed_Items" text="Show Completed Items" />
+                  <CheckBox layoutX="385.0" layoutY="235.0" mnemonicParsing="false" onAction="#Show_Incomplete_Items" text="Show Incomplete Items" />
+                  <TextField fx:id="Status_Item" layoutX="605.0" layoutY="14.0" prefHeight="25.0" prefWidth="113.0" />
+                  <Button layoutX="14.0" layoutY="129.0" mnemonicParsing="false" onAction="#Delete_List" prefHeight="25.0" prefWidth="80.0" text="Delete List" />
+                  <Button layoutX="14.0" layoutY="170.0" mnemonicParsing="false" onAction="#Edit_Name_List" prefHeight="25.0" prefWidth="80.0" text="Edit Name" />
+                  <Button layoutX="344.0" layoutY="142.0" mnemonicParsing="false" onAction="#Modify_Item" text="Modify Item" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
