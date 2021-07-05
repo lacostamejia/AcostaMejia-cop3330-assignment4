@@ -151,4 +151,9 @@ public class TodolistController {
             e.printStackTrace();
         }
     }
+
+    public void Show_Item_Information(MouseEvent mouseEvent) {
+        //Here when we select the corresponding Item, we are going to show the information of this item
+        //Such as status, Name, Due date, and description.
+    }
 }

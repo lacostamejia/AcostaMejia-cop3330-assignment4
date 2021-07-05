@@ -36,42 +36,54 @@
         <items>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                <children>
-                  <ListView fx:id="Lists" layoutY="25.0" onMouseClicked="#Show_List" prefHeight="234.0" prefWidth="358.0" />
-                  <ListView fx:id="Items_List" layoutX="366.0" layoutY="25.0" prefHeight="234.0" prefWidth="358.0" />
-                  <Label layoutX="510.0" text="Items">
-                     <font>
-                        <Font name="Times New Roman" size="26.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="150.0" text="Lists">
-                     <font>
-                        <Font name="Times New Roman" size="26.0" />
-                     </font>
-                  </Label>
+                  <SplitPane dividerPositions="0.5" layoutX="1.0" layoutY="1.0" prefHeight="267.0" prefWidth="740.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <ListView fx:id="Lists" layoutX="6.0" layoutY="26.0" onMouseClicked="#Show_List" prefHeight="237.0" prefWidth="361.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="27.0" />
+                              <Label layoutX="147.0" layoutY="-2.0" prefHeight="29.0" prefWidth="67.0" text="Lists" AnchorPane.leftAnchor="147.0" AnchorPane.rightAnchor="152.0" AnchorPane.topAnchor="-1.0">
+                                 <font>
+                                    <Font name="Times New Roman" size="26.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="264.0" prefWidth="401.0">
+                           <children>
+                              <ListView fx:id="Items_List" layoutX="31.0" layoutY="26.0" onMouseClicked="#Show_Item_Information" prefHeight="231.0" prefWidth="361.0" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="26.0" />
+                              <Label layoutX="156.0" prefHeight="29.0" prefWidth="81.0" text="Items" AnchorPane.leftAnchor="156.0" AnchorPane.rightAnchor="129.0" AnchorPane.topAnchor="1.0">
+                                 <font>
+                                    <Font name="Times New Roman" size="26.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
                </children>
             </AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="232.0" prefWidth="643.0">
                <children>
-                  <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#New_Item" prefHeight="25.0" prefWidth="80.0" text="New Item" />
-                  <Button layoutX="14.0" layoutY="52.0" mnemonicParsing="false" onAction="#Delete_Item" prefHeight="25.0" prefWidth="80.0" text="Delete Item" />
-                  <Button layoutX="14.0" layoutY="91.0" mnemonicParsing="false" onAction="#Save_List" prefHeight="25.0" prefWidth="80.0" text="Save List" />
-                  <RadioButton layoutX="615.0" layoutY="83.0" mnemonicParsing="false" onAction="#Item_Is_Completed" text="Completed" />
-                  <Label layoutX="328.0" layoutY="12.0" text="Item_name">
+                  <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#New_Item" prefHeight="25.0" prefWidth="80.0" text="New Item" AnchorPane.bottomAnchor="227.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="646.0" />
+                  <Button layoutX="14.0" layoutY="52.0" mnemonicParsing="false" onAction="#Delete_Item" prefHeight="25.0" prefWidth="80.0" text="Delete Item" AnchorPane.bottomAnchor="189.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="646.0" />
+                  <Button layoutX="14.0" layoutY="91.0" mnemonicParsing="false" onAction="#Save_List" prefHeight="25.0" prefWidth="80.0" text="Save List" AnchorPane.bottomAnchor="150.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="646.0" />
+                  <RadioButton layoutX="615.0" layoutY="83.0" mnemonicParsing="false" onAction="#Item_Is_Completed" text="Completed" AnchorPane.bottomAnchor="166.0" AnchorPane.rightAnchor="45.0" />
+                  <Label layoutX="328.0" layoutY="12.0" text="Item_name" AnchorPane.bottomAnchor="231.0" AnchorPane.rightAnchor="299.0">
                      <font>
                         <Font name="Times New Roman" size="25.0" />
                      </font>
                   </Label>
-                  <Label layoutX="231.0" layoutY="56.0" prefHeight="17.0" prefWidth="67.0" text="Description" />
-                  <Label layoutX="498.0" layoutY="56.0" text="Due_Date" />
-                  <Label layoutX="558.0" layoutY="18.0" text="Status:" />
-                  <TextField fx:id="Description_label" layoutX="179.0" layoutY="79.0" />
-                  <TextField fx:id="Due_date_label" layoutX="441.0" layoutY="79.0" />
-                  <CheckBox layoutX="209.0" layoutY="235.0" mnemonicParsing="false" onAction="#Show_Completed_Items" text="Show Completed Items" />
-                  <CheckBox layoutX="385.0" layoutY="235.0" mnemonicParsing="false" onAction="#Show_Incomplete_Items" text="Show Incomplete Items" />
-                  <TextField fx:id="Status_Item" layoutX="605.0" layoutY="14.0" prefHeight="25.0" prefWidth="113.0" />
-                  <Button layoutX="14.0" layoutY="129.0" mnemonicParsing="false" onAction="#Delete_List" prefHeight="25.0" prefWidth="80.0" text="Delete List" />
-                  <Button layoutX="14.0" layoutY="170.0" mnemonicParsing="false" onAction="#Edit_Name_List" prefHeight="25.0" prefWidth="80.0" text="Edit Name" />
-                  <Button layoutX="344.0" layoutY="142.0" mnemonicParsing="false" onAction="#Modify_Item" text="Modify Item" />
+                  <Label layoutX="231.0" layoutY="56.0" prefHeight="17.0" prefWidth="67.0" text="Description" AnchorPane.bottomAnchor="193.0" AnchorPane.rightAnchor="442.0" />
+                  <Label layoutX="498.0" layoutY="56.0" text="Due_Date" AnchorPane.bottomAnchor="193.0" AnchorPane.rightAnchor="190.0" />
+                  <Label layoutX="558.0" layoutY="18.0" text="Status:" AnchorPane.bottomAnchor="231.0" AnchorPane.rightAnchor="146.0" />
+                  <TextField fx:id="Description_label" layoutX="179.0" layoutY="79.0" AnchorPane.bottomAnchor="162.0" AnchorPane.rightAnchor="412.0" />
+                  <TextField fx:id="Due_date_label" layoutX="441.0" layoutY="79.0" AnchorPane.bottomAnchor="162.0" AnchorPane.rightAnchor="150.0" />
+                  <CheckBox layoutX="209.0" layoutY="235.0" mnemonicParsing="false" onAction="#Show_Completed_Items" text="Show Completed Items" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="387.0" />
+                  <CheckBox layoutX="385.0" layoutY="235.0" mnemonicParsing="false" onAction="#Show_Incomplete_Items" text="Show Incomplete Items" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="210.0" />
+                  <TextField fx:id="Status_Item" layoutX="605.0" layoutY="14.0" prefHeight="25.0" prefWidth="113.0" AnchorPane.bottomAnchor="227.0" AnchorPane.rightAnchor="22.0" />
+                  <Button layoutX="14.0" layoutY="129.0" mnemonicParsing="false" onAction="#Delete_List" prefHeight="25.0" prefWidth="80.0" text="Delete List" AnchorPane.bottomAnchor="112.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="646.0" />
+                  <Button layoutX="14.0" layoutY="170.0" mnemonicParsing="false" onAction="#Edit_Name_List" prefHeight="25.0" prefWidth="80.0" text="Edit Name" AnchorPane.bottomAnchor="71.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="646.0" />
+                  <Button layoutX="344.0" layoutY="142.0" mnemonicParsing="false" onAction="#Modify_Item" text="Modify Item" AnchorPane.bottomAnchor="99.0" AnchorPane.rightAnchor="315.0" />
                </children>
             </AnchorPane>
         </items>

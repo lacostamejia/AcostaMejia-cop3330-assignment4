@@ -50,6 +50,10 @@ public class List {
         //item on a list.
     }
 
+    public void Create_List(){
+        //Here we are going to be creating a new list.
+    }
+
 
     public void DeleteList(){
         //We have to delete all the information of the list with this code
@@ -72,6 +76,19 @@ public class List {
     public void Load_Multiple_Lists(){
 
         //Here we are going to load multiple lists that we are going to operate with them
+
+    }
+
+    public void Display_List_Items(){
+        //Here we are going to display the completed items of the list
+    }
+
+    public void Display_Completed_Items(){
+        //Here we are going to display the completed items of the list
+
+    }
+    public void Display_Incomplete_Items(){
+        //Here we are going to display the incomplete items of the list.
 
     }
 

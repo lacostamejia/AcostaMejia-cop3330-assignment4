@@ -55,5 +55,8 @@ public class ListItems {
     public void Delete_Item(String name){
         //Here we are going to delete the item
     }
+    public void Add_New_Item(){
+        //This is going to be used to add a new item and using the attributes above.
+    }
 
 }
