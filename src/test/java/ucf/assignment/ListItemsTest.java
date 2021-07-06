@@ -5,6 +5,11 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/*
+ *  UCF COP3330 Summer 2021 Assignment 4 Solution
+ *  Copyright 2021 Luis Andres Acosta Mejia
+ */
+
 class ListItemsTest {
 /*
     A user shall be able to add a new item to an existing todo list -

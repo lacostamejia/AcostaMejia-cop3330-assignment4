@@ -9,12 +9,14 @@ public class ListItems {
     private String name;
     private String due_date;
     private String description_item;
+    private boolean status;
 
     //Constructor for the name Initialization
-    public ListItems(String name, String due_date, String description_item) {
+    public ListItems(String name, String due_date, String description_item, boolean status) {
         this.name = name;
         this.due_date = due_date;
         this.description_item = description_item;
+        this.status = status = false;
     }
 
     public String getName() {

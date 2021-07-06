@@ -5,11 +5,11 @@ class Todolist{
 +start()
 }
 class TodoListController{
-model: List
+model: TDList
 'GUI functions'
 }
 
-class List{
+class TDList{
 List_Name: String
 ListItems: ArrayList
 +SaveList()
@@ -51,15 +51,18 @@ class NewTodoListController{
 }
 
 class NewTodoListItemController{
-
 }
 
 
 
 org.javafx.Application <|-- Todolist
 Todolist -- TodoListController
-TodoListController *-- List
-List *-- ListItems
+TodoListController *-- TDList
+ModifyItemListController *-- TDList
+NewTodoListController *-- TDList
+NewTodoListItemController *-- TDList
+
+TDList *-- ListItems
 TodoListController --ModifyItemListController
 TodoListController -- NewTodoListItemController
 TodoListController --  NewTodoListController

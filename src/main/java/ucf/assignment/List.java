@@ -11,9 +11,11 @@ import java.util.ArrayList;
 
 public class List {
 
-    private String List_Name;
+    private String List_Name = "First";
     //Here we are going to create an array list to store the items inside this list
     private ArrayList<String> List_Items; //Here we are going to store the items in this list
+   // ListItems hola = new ListItems("Comer","16-2-2021","Comer carne",false);
+
 
 
     //Constructor for the name Initialization

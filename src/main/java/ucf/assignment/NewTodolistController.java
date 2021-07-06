@@ -18,6 +18,7 @@ public class NewTodolistController {
     public void Create_List(ActionEvent actionEvent) {
         //Here we are going to be creating a new list with the name inputted.
         //We have to check if the name is empty or NULL
+        //We have to use the class List and call it as a blue print, in order to access to the information of this class
     }
     @FXML
     public void Close_New_todo_list(ActionEvent actionEvent) {
@@ -30,5 +31,6 @@ public class NewTodolistController {
         //We have to check if there is an item with the same name imputed.
         //If the name, due date or description is empty or NULL.
         //We are going to set the status of the item at first as incomplete.
+        //We have to access to the ListItems class
     }
 }

@@ -25,6 +25,8 @@ public class NewTodoListItemController {
         description, due date, and name.
         We have to check if there is a item already created with the same name,
         we have to check if the item, description or due date is null or empty.
+        We have to access to the ListItems class, in order to create new items with all the information there
+        Then we have to attach this item to the List
          */
     }
 }
