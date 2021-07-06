@@ -103,34 +103,40 @@ public class TodolistController {
         //Here we are going to check the status of the item; if is incomplete and we pressed the button; then we are going
         //to change back the status of the item. Otherwise, if is complete and we pressed again the button completed;
         //we are going to set back to incomplete the status of the item.
+        //We have to use the ListItems class to show the information of the item.
     }
     @FXML
     public void Show_Completed_Items(ActionEvent actionEvent) {
         //Here we are going to filter and just show the items that are completed in the list.
         //Also, we are going to check if the Show_Incompleted_Items is marked, in order to disable that option
         //and enable this new option of filtering Show_Completed_Items.
+        //We have to use the List and ListItems class to show all the information about these ones
     }
     @FXML
     public void Show_Incomplete_Items(ActionEvent actionEvent) {
         //Here we are going to filter and just show the items that are incompleted in the list.
         //Also, we are going to check if the Show_completed_Items is marked, in order to disable that option
         //and enable this new option of filtering Show_Completed_Items.
+        //We have to use the List and ListItems classes to show all the information about these ones.
     }
     @FXML
     public void Load_Multiple_Lists(ActionEvent actionEvent) {
         /*
         Here we are going to load multiple lists into the list view which is the Lists.
+        //We are going to add them and load them with the List class
          */
     }
     @FXML
     public void Delete_List(ActionEvent actionEvent) {
         //Here we are going to check in the show_list what was the list that was selected.
         //Then if this list is selected, and we press this button, we are going to delete all this list.
+        //We are going to use the List class, and delete all the attributes that belong to the list
     }
     @FXML
     public void Edit_Name_List(ActionEvent actionEvent) {
         //Here we are going to check in the show_list what was the list that was selected.
         //Then if this list is selected, and we press this button, we are going to edi the name of this list.
+        //Here we are going to use the List class.
     }
     @FXML
     public void Modify_Item(ActionEvent actionEvent) {
@@ -155,5 +161,6 @@ public class TodolistController {
     public void Show_Item_Information(MouseEvent mouseEvent) {
         //Here when we select the corresponding Item, we are going to show the information of this item
         //Such as status, Name, Due date, and description.
+        //Here we are going to use the ListItem class to show all this information
     }
 }

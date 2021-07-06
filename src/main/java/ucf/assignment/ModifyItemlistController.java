@@ -20,6 +20,7 @@ public class ModifyItemlistController {
         /*Here we are going to first check if at least the description
         or the due date was changed, in order to be saved.
         Then we are going to update the list by changing the item that we selected.
+        //We are going to save back again to the List class and ListItems with their attributes.
         */
     }
 
